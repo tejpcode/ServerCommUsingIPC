@@ -1,0 +1,47 @@
+#!/bin/bash
+
+make
+
+gcc -c rq0.c
+gcc -o rq0 rq0.o
+
+gcc -c rq1.c
+gcc -o rq1 rq1.o
+
+gcc -c rq2.c
+gcc -o rq2 rq2.o
+
+gcc -c rq3.c
+gcc -o rq3 rq3.o
+
+gcc -c rq4.c
+gcc -o rq4 rq4.o
+
+gcc -c rq5.c
+gcc -o rq5 rq5.o
+
+gcc -c rq6.c
+gcc -o rq6 rq6.o
+
+gcc -c rq7.c
+gcc -o rq7 rq7.o
+
+gcc -c rq8.c
+gcc -o rq8 rq8.o
+
+gcc -c addor.c
+gcc -o addor addor.o
+
+gcc -c substractor.c
+gcc -o substractor substractor.o
+
+gcc -c mul.c
+gcc -o mul mul.o
+
+gcc -c divider.c
+gcc -o divider divider.o
+
+gcc -c clrq0.c
+gcc -o clrq0 clrq0.o
+
+chmod +x rqrun1
