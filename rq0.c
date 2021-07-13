@@ -28,7 +28,6 @@ int main()
 		perror("write");
 		exit(EXIT_FAILURE);
 	}
-        printf("written\n");
 	str.sem_num=0;
 	str.sem_op=1;
 	str.sem_flg=SEM_UNDO;
