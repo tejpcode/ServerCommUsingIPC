@@ -18,8 +18,8 @@ int main(int argc,char* argv[])
 	str.sem_num=2;
 	str.sem_op=-1;
 	str.sem_flg=SEM_UNDO;
-	semop(atoi(argv[2]),&str,1);
-	ret=shmget((key_t)121,sizeof(Result),0666|IPC_CREAT);
+	semop(atoi(argv[2]),&str,1);        //semaphore wait operation
+	ret=shmget((key_t)121,sizeof(Result),0666|IPC_CREAT);       //shared memory initialisation
 	res=(Result*)shmat(ret,0,0);
 	while(res->flag!=1);
 	res->result=data.d1+data.d2;
